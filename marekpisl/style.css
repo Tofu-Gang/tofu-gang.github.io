@@ -1,4 +1,5 @@
 body {
+    background-color: #fffcf5;
     margin: 0;
     padding: 0;
     font-family: "Barlow Condensed", sans-serif;
@@ -7,6 +8,8 @@ body {
 
 #navbar {
     background-color: aquamarine;
+    font-size: 40pt;
+    font-weight: 500;
     position: relative;
     margin: 0 auto;
     top: 60px;
@@ -16,73 +19,34 @@ body {
 }
 
 #tiles {
-    background-color: black;
     position: relative;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     top: 120px;
     width: 1170px;
     height: 744px;
 }
 
 .tile {
-    /* position: absolute; */
     background-color: red;
     width: 370px;
     height: 228px;
 }
 
-/* #visual_styles {
-    background-color: dimgray;
-    left: 375px;
-    top: 190px;
+#tiles img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-#posters {
-    background-color: blue;
-    position: absolute;
-    top: 190px;
-    left: 775px;
+.title {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 40px;
+    font-size: 21pt;
+    font-weight: 600;
+    color: #fffcf5;
+    text-align: center;
+    position: relative;
+    bottom: 42px;
 }
-
-#painting {
-    background-color: blueviolet;
-    position: absolute;
-    top: 190px;
-    right: 375px;
-}
-
-#artwork {
-    background-color: brown;
-    left: 375px;
-    top: 448px;
-}
-
-#shirts {
-    background-color: chartreuse;
-    top: 448px;
-    left: 775px;
-}
-
-#businesscards {
-    background-color: darkgoldenrod;
-    top: 448px;
-    right: 375px;
-}
-
-#web {
-    background-color: darkred;
-    left: 375px;
-    top: 706px;
-}
-
-#projects {
-    background-color: darksalmon;
-    top: 706px;
-    left: 775px;
-}
-
-#organs {
-    background-color: deeppink;
-    top: 706px;
-    right: 375px;
-} */
