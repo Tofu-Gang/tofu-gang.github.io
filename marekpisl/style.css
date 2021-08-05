@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow Condensed", sans-serif;
+    overflow: hidden;
+}
+
+#navbar {
+    background-color: aquamarine;
+    position: relative;
+    margin: 0 auto;
+    top: 60px;
+    bottom: 60px;
+    width: 1170px;
+    height: 70px;
+}
+
+#tiles {
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    top: 120px;
+    width: 1170px;
+    height: 744px;
+}
+
+.tile {
+    /* position: absolute; */
+    background-color: red;
+    width: 370px;
+    height: 228px;
+}
+
+/* #visual_styles {
+    background-color: dimgray;
+    left: 375px;
+    top: 190px;
+}
+
+#posters {
+    background-color: blue;
+    position: absolute;
+    top: 190px;
+    left: 775px;
+}
+
+#painting {
+    background-color: blueviolet;
+    position: absolute;
+    top: 190px;
+    right: 375px;
+}
+
+#artwork {
+    background-color: brown;
+    left: 375px;
+    top: 448px;
+}
+
+#shirts {
+    background-color: chartreuse;
+    top: 448px;
+    left: 775px;
+}
+
+#businesscards {
+    background-color: darkgoldenrod;
+    top: 448px;
+    right: 375px;
+}
+
+#web {
+    background-color: darkred;
+    left: 375px;
+    top: 706px;
+}
+
+#projects {
+    background-color: darksalmon;
+    top: 706px;
+    left: 775px;
+}
+
+#organs {
+    background-color: deeppink;
+    top: 706px;
+    right: 375px;
+} */
