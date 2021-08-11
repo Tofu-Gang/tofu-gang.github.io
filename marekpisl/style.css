@@ -112,7 +112,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     height: 40px;
     position: relative;
-    bottom: 42px;
+    bottom: 43px;
     font-size: 16pt;
     text-align: center;
     line-height: 38px; /* Not true, it is 40px. However, this achieves desired vertical align of the text. */
