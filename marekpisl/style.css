@@ -33,35 +33,15 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* insta */
-#navbar img:nth-child(3) {
-    position: absolute;
-    right: 183px;
-    top: 20px;
-    width: 21px;
-    height: 21px;
-}
-
-/* fb */
-#navbar img:nth-child(4) {
-    position: absolute;
-    right: 150px;
-    top: 20px;
-    width: 21px;
-    height: 21px;
-}
-
 /* email */
-#navbar img:nth-child(5) {
+#navbar img:nth-child(3) {
     position: absolute;
     right: 117px;
     top: 20px;
-    width: 21px;
-    height: 21px;
 }
 
 /* vita */
-#navbar span:nth-child(6) {
+#navbar span:nth-child(4) {
     position: absolute;
     right: 0;
     font-weight: 400;
