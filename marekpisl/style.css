@@ -90,13 +90,14 @@ body {
     height: 40px;
     position: relative;
     bottom: 42px;
-    text-align: center;
     font-size: 16pt;
+    text-align: center;
+    line-height: 38px; /* Not true, it is 40px. However, this achieves desired vertical align of the text. */
 }
 
 .title span {
     font-weight: 500;
     color: #fffcf5;
-    vertical-align: sub;
     letter-spacing: 0.03em;
+    vertical-align: baseline;
 }
