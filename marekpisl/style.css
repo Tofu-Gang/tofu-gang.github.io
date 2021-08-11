@@ -31,6 +31,14 @@ body {
 /* Marek Pišl */
 #navbar span:nth-child(1) {
     letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#navbar span:nth-child(1):hover {
+    color: #929088;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 /* animated leaves */
@@ -55,6 +63,14 @@ body {
     font-weight: 400;
     vertical-align: middle;
     right: 60px;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+#navbar span:nth-child(3):hover {
+    color: #929088;
+    transition-property: color;
+    transition-duration: 0.5s;
 }
 
 /* email */
@@ -64,6 +80,16 @@ body {
     top: 20px;
     width: 21px;
     height: 21px;
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+
+#navbar img:nth-child(4):hover {
+    /* This filter achieves the #929088 color, svg in img tag cannot be colored directly by color or fill properties */
+    /* Filter generator: https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(63%) sepia(5%) saturate(440%) hue-rotate(11deg) brightness(90%) contrast(90%);
+    transition-property: filter;
+    transition-duration: 0.5s;
 }
 
 #tiles {
