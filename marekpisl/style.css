@@ -1,9 +1,21 @@
+:root {
+    --background-color-light: #fffcf5;
+    --flowers-width: 375px;
+    --navbar-hover-transition-duration: 0.5s;
+    --navbar-hover-color: #929088;
+    --navbar-height: 70px;
+    --tile-width: 370px;
+    --tile-height: 228px;
+    --tiles-gap: 30px;
+    --title-height: 40px;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    background: linear-gradient(#fffcf5 90%, rgba(0, 0, 0, 0.3));
+    background: linear-gradient(var(--background-color-light) 90%, rgba(0, 0, 0, 0.3));
     margin: 0;
     padding: 0;
     font-family: "Barlow Condensed", sans-serif;
@@ -12,7 +24,7 @@ body {
 
 #flowers {
     position: absolute;
-    width: 375px;
+    width: var(--flowers-width);
     left: 0;
     top: 0;
 }
@@ -24,21 +36,21 @@ body {
     margin: 0 auto;
     top: 90px;
     bottom: 60px;
-    width: 1170px;
-    height: 70px;
+    width: calc((3 * var(--tile-width)) + (2 * var(--tiles-gap)));
+    height: var(--navbar-height);
 }
 
 /* Marek Pišl */
 #navbar span:nth-child(1) {
     letter-spacing: 0.02em;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 #navbar span:nth-child(1):hover {
-    color: #929088;
+    color: var(--navbar-hover-color);
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 /* animated leaves */
@@ -64,13 +76,13 @@ body {
     vertical-align: middle;
     right: 60px;
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 #navbar span:nth-child(3):hover {
-    color: #929088;
+    color: var(--navbar-hover-color);
     transition-property: color;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 /* email */
@@ -81,15 +93,15 @@ body {
     width: 21px;
     height: 21px;
     transition-property: filter;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 #navbar img:nth-child(4):hover {
-    /* This filter achieves the #929088 color, svg in img tag cannot be colored directly by color or fill properties */
+    /* This filter achieves the --navbar-hover-color color, svg in img tag cannot be colored directly by color or fill properties */
     /* Filter generator: https://codepen.io/sosuke/pen/Pjoqqp */
     filter: invert(63%) sepia(5%) saturate(440%) hue-rotate(11deg) brightness(90%) contrast(90%);
     transition-property: filter;
-    transition-duration: 0.5s;
+    transition-duration: var(--navbar-hover-transition-duration);
 }
 
 #tiles {
@@ -97,25 +109,27 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: var(--tiles-gap);
     top: 120px;
-    width: 1170px;
-    height: 744px;
+    width: calc((3 * var(--tile-width)) + (2 * var(--tiles-gap)));
+    height: calc((3 * var(--tile-height)) + (2 * var(--tiles-gap)));
 }
 
 .tile {
-    width: 370px;
-    height: 228px;
+    width: var(--tile-width);
+    height: var(--tile-height);
 }
 
 .title {
     background-color: rgba(0, 0, 0, 0.75);
-    height: 40px;
+    height: var(--title-height);
     position: relative;
-    bottom: 43px;
+    bottom: calc(var(--title-height) + 3px);
     font-size: 16pt;
     text-align: center;
-    line-height: 38px; /* Not true, it is 40px. However, this achieves desired vertical align of the text. */
+    line-height: calc(
+        var(--title-height) - 2px
+    ); /* It should be just title height, but it has to be adjusted for the vertical align to be correct. */
 }
 
 .title span {
