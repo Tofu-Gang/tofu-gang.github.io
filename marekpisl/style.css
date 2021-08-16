@@ -140,3 +140,43 @@ body {
     letter-spacing: 0.03em;
     vertical-align: baseline;
 }
+
+.tile_hover {
+    background-color: black;
+    color: var(--background-color-light);
+    font-size: 30pt;
+    width: var(--tile-width);
+    height: var(--tile-height);
+}
+
+.tile_hover p {
+    margin: 0;
+}
+
+.tile_hover div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile_hover hr {
+    position: relative;
+    border: none;
+    margin: 0;
+    width: calc(var(--tile-width) - 20px);
+    height: 1px;
+    left: 10px;
+    right: 10px;
+    background-color: var(--background-color-light);
+}
+
+.tile_hover hr:first-of-type {
+    top: 10px;
+}
+
+.tile_hover hr:last-of-type {
+    bottom: 10px;
+}
