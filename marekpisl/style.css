@@ -116,6 +116,7 @@ body {
 }
 
 .tile {
+    position: relative;
     width: var(--tile-width);
     height: var(--tile-height);
 }
@@ -123,8 +124,9 @@ body {
 .title {
     background-color: rgba(0, 0, 0, 0.75);
     height: var(--title-height);
-    position: relative;
-    bottom: calc(var(--title-height) + 3px);
+    width: 100%;
+    position: absolute;
+    top: calc(var(--tile-height) - var(--title-height));
     font-size: 16pt;
     text-align: center;
     line-height: calc(
