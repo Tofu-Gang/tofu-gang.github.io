@@ -147,6 +147,10 @@ body {
     font-size: 30pt;
     width: var(--tile-width);
     height: var(--tile-height);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }
 
 .tile_hover p {
