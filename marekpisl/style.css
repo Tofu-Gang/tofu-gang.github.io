@@ -121,6 +121,16 @@ body {
     height: var(--tile-height);
 }
 
+.tile_non_hover {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+.tile_non_hover:hover {
+    opacity: 0;
+}
+
 .title {
     background-color: rgba(0, 0, 0, 0.75);
     height: var(--title-height);
@@ -150,7 +160,7 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0;
+    z-index: 0;
 }
 
 .tile_hover p {
